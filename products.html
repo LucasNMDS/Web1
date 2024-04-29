@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Padaria Sonhadora - Nossos Produtos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-brand" href="home.html">Home</a>
+    <a class="navbar-brand active" href="#">Produtos</a>
+    <a class="navbar-brand" href="#">Sobre nós</a>
+    <a class="navbar-brand" href="#">Contato</a>
+  </div>
+</nav>
+
+<header class="header-bg">
+  <h1 class="title">Padaria Sonhadora</h1>
+  <p class="subtitle">Onde você compra sonhos!</p>
+</header>
+
+<!-- Products -->
+<div class="container" id="products-container">
+  <!-- Product Cards will be inserted here -->
+</div>
+
+<!-- Botão Excluir -->
+<!-- Modal de Confirmação de Exclusão -->
+<div id="modal-exclusao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModalExclusao()">&times;</span>
+    <p>Deseja realmente excluir este produto?</p>
+    <button onclick="confirmarExclusao()">Sim</button>
+    <button onclick="fecharModalExclusao()">Não</button>
+  </div>
+</div>
+
+<!-- Formulário de Adicionar Produto -->
+<div class="container form-container">
+  <h2>Adicionar Novo Produto</h2>
+  <form id="add-product-form" class="form-horizontal">
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <label for="nome" class="label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="input-field">
+            </div>
+            <div class="col">
+                <label for="imagem" class="label">URL da Imagem:</label>
+                <input type="text" id="imagem" name="imagem" class="input-field">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="descricao" class="label">Descrição:</label>
+        <textarea id="descricao" name="descricao" class="input-field"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="button" onclick="addProduct()" class="btn add-btn">Adicionar Produto</button>
+        <button type="button" onclick="limparFormulario()" class="btn cancel-btn">Limpar Campos</button>
+    </div>
+  </form>
+  <button id="btn-excluir" class="btn-excluir" onclick="toggleExclusao()">Excluir Produto</button>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="social-icons">
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-snapchat"></i>
+      <i class="fa fa-pinterest-p"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+  </div>
+  <p>Powered by <a href="#">Your Name</a></p>
+</footer>
+
+<script src="products.js"></script>
+
+</body>
+</html>

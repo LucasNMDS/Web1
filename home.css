@@ -1,0 +1,125 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: large;
+}
+/* Estilos para imagens */
+/* Estilos para imagens */
+.info-icon img {
+    width: 250px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção original da imagem */
+    border: 20px solid white; /* Adiciona uma borda de 2px sólida */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin-right: 40px; /* Margem entre a imagem e o texto */
+    margin-left: 40px; /* Margem entre a imagem e o texto */
+}
+
+/* Estilo da navegação */
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navbar-brand {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #F5F5DC;
+    color:black
+  }
+
+.header-bg {
+    background-image: url('https://images.seattletimes.com/wp-content/uploads/2017/02/85C-Bread-Image-2.jpg?d=780x439');
+    background-size: cover;
+    background-position: center;
+    padding: 128px 16px;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Qwigley", cursive;
+    font-size: 4em;
+}
+
+.subtitle {
+    font-family: "Ms Madi", cursive;
+    font-size: 1.5em;
+}
+
+/* Estilo da seção de informações */
+.info-section {
+    display: flex;
+    padding: 32px 16px; /* Reduzindo a altura da grade */
+}
+
+/* Estilo da seção de informações alternativas */
+.info-section.alternate {
+    background-color: #f0f0f0;
+    padding: 32px 16px; /* Reduzindo a altura da grade */
+}
+
+
+.info-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    font-size: 300px;
+    color: #FF0000;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    flex: 2;
+}
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
